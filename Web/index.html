@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-GB" prefix="og: http://ogp.me/ns#" class="is-chrome is-desktop" style="background: white;">
+<head>
+    <meta charset="utf-8">
+    <title>YMAQ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Lateef&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="personalwebsite.html"></a>
+            <div class="nav-links active-nav-link" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="aboutme.html">ABOUT</a></li>
+                    <li><a href="media.html">MEDIA</a></li>
+                    <li><a href="https://github.com/yuvemaq?tab=repositories">MY GITHUB</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-search-minus" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>Welcome to My Website</h1>
+    <p>Hi there! My name is Yvonne. This website contains anything and everything that I am and do. Have fun exploring!</p>
+    <a href="https://www.amazon.com/hz/wishlist/ls/17VXVPZAG1VC1?type=wishlist&ref=cm_wl_list_create&relatedRequestID=6XSNRXDXNRDQ22JZVSX5" class="hero">Want to go shopping?</a>
+</div>
+    </section>
+
+<section class="content">
+    <h1>Projects</h1>
+
+    <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+            
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(imag/AQIvalues.png)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="imag/logo2.png" alt="">
+                    </div>
+
+                    <div class="subtitle-link-wrapper">
+                        <a href="https://github.com/yuvemaq/Personal-Projects/tree/master">Time Series and MA Models</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(imag/map_bur_price.png)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="imag/logo3.png" alt="">
+                    </div>
+
+                    <div class="subtitle-link-wrapper">
+                        <a href="https://github.com/yuvemaq/Personal-Projects/tree/main/Capstone-Traditional-vs-Nontraditional-Burial-Analysis-main">Analysis on Burial Types and Costs in the UK</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(imag/machine_learn.png)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="imag/logo5.png" alt="">
+                    </div>
+
+                    <div class="subtitle-link-wrapper">
+                        <a href="https://github.com/yuvemaq/Personal-Projects/blob/main/Estimating%20when%20four%20natural%20resources%20will%20be%20depleted/Pre-Process%2C%20Training%2C%20and%20Modeling.ipynb">Classification</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(imag/pie.png)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="imag/logo6.png" alt="">
+                    </div>
+
+                    <div class="subtitle-link-wrapper">
+                        <a href="https://github.com/yuvemaq/Personal-Projects/tree/main/Trend%20Forecasting">Web Scraping</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(imag/classifier.png)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="imag/logo7.png" alt="">
+                        </div>
+                    <div class="subtitle-link-wrapper">
+                        <a href="https://github.com/yuvemaq/Personal-Projects/blob/main/Estimating%20when%20four%20natural%20resources%20will%20be%20depleted/Pre-Process%2C%20Training%2C%20and%20Modeling.ipynb">Machine Learning</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(imag/springboard.png)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="imag/logo8.png" alt="">
+                    </div>
+
+                    <div class="subtitle-link-wrapper">
+                        <a href="https://github.com/yuvemaq/Springboard_">Springboard</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    var navLinks= document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+       portfolioItem.addEventListener('mouseover', () => {
+           portfolioItem.childNodes[1].classList.add('img-darken');
+       })
+
+       portfolioItem.addEventListener('mouseout', () => {
+           portfolioItem.childNodes[1].classList.remove('img-darken');
+        
+       })       
+    })
+</script>
+</body>
+</html>
