@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-GB" prefix="og: http://ogp.me/ns#" class="is-chrome is-desktop" style="background: white;">
+<head>
+    <meta charset="utf-8">
+    <title>YMAQ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Lateef&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-timeseries-links active-nav-link" id="navLinks">
+            <i class="fa fa-window-close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="personalwebsite.html">HOME</a></li>
+                <li><a href="aboutme.html active-nav-link">ABOUT</a></li>
+                <li><a href="media.html">MEDIA</a></li>
+                <li><a href="https://github.com/yuvemaq?tab=repositories">MY GITHUB</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-search-minus" onclick="showMenu()"></i>
+    </nav>
+<section class="content-timeseries">
+    <h1>Tree Cover, Green Space and Air Quality Correlation to Acute Respiratory Illnesses in Los Angeles, New York, and Tampa</h1>
+    <div class="row">
+        <div class="content-column">
+            <p1>Using data from AirNow.gov, U.S. EPA and EnviroAtlas, I did an analysis on Air Quality Index, tree cover percentage, and green space percentage for four U.S. cities (Cleveland, Los Angeles, New York, and Tampa).
+                This project contains data from January 2019-December 2020 and January 2020-December 2021. The objective is to find the correlation between pollution and acute respiratory illnesses and green
+                space/tree cover and acute respiratory illnesses. Parameter for main pollutant was PM2.5, and I did a comparison of yearly average AQI levels from January 2019 to December 2020 and from January 2020 to December 2021,
+                first via all cities and then a two-cities comparison.</p1>
+
+            <img class="img-aqi" src="imag/aqi_2019.png" alt="aqi values 2019">
+            <div class="img-aqi"></div>
+
+            <p2>In the 2019-2020 data, Los Angeles-Long Beach-Anaheim had the highest PM2.5 levels (average = 90.2), with seasonal peaks around late spring to early fall. In second place was New York-Newark-Jersey City (average = 54.8),
+                with peaks around summer, and third and fourth place respectively were Cleveland-Elyria (average = 51.9) and Tampa (average = 46.6).</p2>
+
+            <img class="img-aqi" src="imag/aqi_2021.png" alt="aqi values 2021">
+            <div class="img-aqi"></div>
+
+            <p3>In the 2020-2021 data, Los Angeles-Long Beach-Anaheim had the highest PM2.5 levels (average = 66.8), with seasonal peaks around early fall to early early winter. In second place was Cleveland (average = 46.2) with peaks
+                fall and spring to summer. In third and fourth place respectively were York-Newark-Jersey City (average = 44.8) and Tampa (average = 40.6).</p3>
+
+            <p4>From the two-cities comparison, starting with Tampa, FL and Cleveland, OH, in the 2019-2020 data Tampa exhibited a deviation from the low AQI levels around March to May 2019 and April to June 2020, with higher
+                AQI levels around 146. For Cleveland-Elyria, PM2.5 AQI levels peaked late July to early September 2019 and July to September 2020 (highest levels around 120). In the 2020-2021 data, Tampa PM2.5 levels were highest during
+                January, late April to early May, July, and September 2020 and June, July, and September 2021.</p4>
+
+            <img class="img-aqi" src="imag/aqi_tacle.png" alt="aqi values 2019">
+            <div class="img-aqi"></div>
+            <img class="img-aqi" src="imag/aqi_tacle21.png" alt="aqi values 2021">
+            <div class="img-aqi"></div>
+            
+            <p5>In the Los Angeles-Long Beach-Anaheim and York-Newark-Jersey comparison, in 2019-2020 Los Angeles-Long Beach-Anaheim's PM2.5 levels were highest July and September 2019 and in 2020-2021 levels were highest between July to
+                September 2020 and late November 2021. 
+            </p5>
+
+            <img class="img-aqi" src="imag/aqi_lany.png" alt="aqi values 2019">
+            <div class="img-aqi"></div>
+            <img class="img-aqi" src="imag/aqi_lany21.png" alt="aqi values 2021">
+            <div class="img-aqi"></div>
+
+            <img class="img-aqi" src="imag/aqi_cleny.png" alt="aqi values 2019">
+            <div class="img-aqi"></div>
+            <img class="img-aqi" src="imag/aqi_cleny21.png" alt="aqi values 2021">
+            <div class="img-aqi"></div>
+
+            <img class="img-aqi" src="imag/aqi_nyta.png" alt="aqi values 2019">
+            <div class="img-aqi"></div>
+            <img class="img-aqi" src="imag/aqi_nyta21.png" alt="aqi values 2021">
+            <div class="img-aqi"></div>
+            
+            
+        </div>
+    </div>
+</section>
+<script>
+    var navLinks= document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+       portfolioItem.addEventListener('mouseover', () => {
+           portfolioItem.childNodes[1].classList.add('img-darken');
+       })
+
+       portfolioItem.addEventListener('mouseout', () => {
+           portfolioItem.childNodes[1].classList.remove('img-darken');
+        
+       })       
+    })
+</script>
+</body>
+</html>
