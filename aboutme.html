@@ -1,50 +1,63 @@
 <!DOCTYPE html>
-<html lang="en-GB" prefix="og: http://ogp.me/ns#" class="is-chrome is-desktop" style="background: rgb(214, 219, 219);">
+<html lang="en-GB" prefix="og: http://ogp.me/ns#" class="is-chrome is-desktop" style="background: rgb(222, 240, 240);">
 <head>
     <meta charset="utf-8">
     <title>About</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Lateef&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="two-column-wrapper">
-            <div class="image">
-                <img src="imag/myface5.jpg" alt="my face">
-                    
-            </div>
-
-            <div class="profile-content-wrapper">
-                <h1>Welcome to my site.</h1>
-                <h2>Data Analyst & Clinical Pharmacy Technician</h2>
-                <p>My journey</p>
-
-            </div>
+    <nav>
+        <div class="nav-aboutme-links active-nav-link" id="navLinks">
+            <i class="fa fa-window-close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutme.html active-nav-link">ABOUT</a></li>
+                <li><a href="media.html">MEDIA</a></li>
+                <li><a href="https://github.com/yuvemaq?tab=repositories">MY GITHUB</a></li>
+            </ul>
         </div>
-        <div class="nav-wrapper">
-            <div class="left-side">
-                <div class="nav-link-wrapper">
-                    <a href="personalwebsite.html">Home</a>
+        <i class="fa fa-search-minus" onclick="showMenu()"></i>
+    </nav>
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>About Me</h1>
                 </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="aboutme.html">About</a>
-                </div>
-            
-                    
-                <div class="nav-link-wrapper">
-                    <a href="https://github.com/yuvemaq?tab=repositories">My Github</a>
+                <div class="content">
+                    <h3>Data Analyst & Clinical Pharmacy Technician</h3>
+                    <p>My interest in data analysis started from a seminar I took in college on Survey of Research Human Subjects where I learned about the history of clinical trials and the world’s progress in protections to human subjects in research. I learned that compared to past methods of data collection, gathering, and reporting, in today’s world where technology is advanced when it is applied to sophisticated methods such as statistical analysis plans in clinical trials, it surpasses the old way in aspects such as efficacy, validity, safety, and reproducibility tenfold. Working at a hospital pharmacy during the covid-19 pandemic, along with my keen interest in data engineering, it provided the impetus for me to pursue a career in data analysis. My goal is to one day work as a data scientist.</p>
                 </div>
             </div>
-
-            <div class="right-side">
-                <div class="brand">
-                    <div>WELCOME TO MY WEBSITE</div>
-                </div>
+            <div class="image-section">
+                <img src="imag/myface5.jpg" alt="">
             </div>
         </div>
     </div>
+<script>
+    var navLinks= document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+    
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+            
+        })       
+    })
+</script>
 </body>
 </html>
