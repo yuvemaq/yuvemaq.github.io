@@ -303,6 +303,90 @@ h1 {
     color:#222929;
 }
 
+/* Nav styles for aboutme.html */
+.nav-aboutme {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-aboutme-links {
+    padding: 38px;
+    height: 22px;
+    margin-right: 48px;
+    flex: 1;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.nav-aboutme-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    transition: border-bottom 0.5s;
+}
+
+.nav-aboutme-links ul li a {
+    color: #191f1f;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 1.3em; 
+}
+
+.nav-aboutme-links:hover {
+    border-bottom: 1x solid rgb(85, 122, 122);
+}
+
+.nav-aboutme-links a:hover {
+    color: rgb(91, 148, 148);
+}
+
+.nav-aboutme-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(112, 121, 124);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-aboutme-links ul li:hover::after {
+    width: 100%;
+}
+
+nav-aboutme .fa {
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #8fc3ca;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
 /* Nav styles for timeseries.html */
 .nav-timeseries {
     display: flex;
