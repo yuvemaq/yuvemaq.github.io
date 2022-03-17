@@ -273,7 +273,7 @@ h1 {
 
 .image-section {
     float: right;
-    width: 38%;
+    width: 28%;
 }
 
 .image-section img{
@@ -283,7 +283,6 @@ h1 {
 }
 
 .content-section .title {
-    text-align: center;
     text-transform: uppercase;
     font-size: 28px;
     color:#262c2c;
@@ -298,7 +297,7 @@ h1 {
 .content-section .content p{
     text-align: left;
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 1.5;
     color:#222929;
 }
