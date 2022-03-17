@@ -328,7 +328,7 @@ h1 {
 }
 
 .nav-aboutme-links ul li a {
-    color: #191f1f;
+    color: #8ea3a0;
     text-decoration: none;
     transition: color 0.5s;
     font-size: 1.3em; 
@@ -550,7 +550,7 @@ p5 {
     background-size: 100%;
 } 
 
-/* Nav styles for timeseries.html */
+/* Nav styles for media.html */
 .nav-media {
     display: flex;
     padding: 2% 6%;
