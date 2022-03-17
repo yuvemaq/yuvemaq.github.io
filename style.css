@@ -282,7 +282,7 @@ h1 {
     display: block;
 }
 
-.content-section .title {
+.content-section .title h1{
     text-transform: uppercase;
     font-size: 28px;
     color:#262c2c;
