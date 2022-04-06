@@ -1,7 +1,8 @@
 /* Master styles */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     font-family: "Lateef", sans-serif;
 }
 
@@ -234,7 +235,7 @@ h1 {
 }
 
 .subtitle-link-wrapper a {
-    color: rgb(242, 248, 248);
+    color: rgb(180, 202, 196);
     text-decoration: none;
     font-family: "Lateef", sans-serif;
     font-size: 1.5em;
@@ -273,7 +274,7 @@ h1 {
 
 .image-section {
     float: right;
-    width: 28%;
+    width: 38%;
 }
 
 .image-section img{
@@ -283,6 +284,7 @@ h1 {
 }
 
 .content-section .title {
+    text-align: center;
     text-transform: uppercase;
     font-size: 28px;
     color:#262c2c;
@@ -297,7 +299,7 @@ h1 {
 .content-section .content p{
     text-align: left;
     margin-top: 10px;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 1.5;
     color:#222929;
 }
@@ -328,7 +330,7 @@ h1 {
 }
 
 .nav-aboutme-links ul li a {
-    color: #8ea3a0;
+    color: #191f1f;
     text-decoration: none;
     transition: color 0.5s;
     font-size: 1.3em; 
