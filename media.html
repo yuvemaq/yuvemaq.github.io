@@ -14,7 +14,7 @@
         <div class="nav-media-links active-nav-link" id="navLinks">
             <i class="fa fa-window-close" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="personalwebsite.html">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="aboutme.html active-nav-link">ABOUT</a></li>
                 <li><a href="media.html">MEDIA</a></li>
                 <li><a href="https://github.com/yuvemaq?tab=repositories">MY GITHUB</a></li>
@@ -22,7 +22,50 @@
         </div>
         <i class="fa fa-search-minus" onclick="showMenu()"></i>
     </nav>
-<section>
+    <section class="showcase">
+        <header>
+            <h2 class=""logo>Media Page</h2>
+            <div class="toggle"></div>
+        </header>
+        <video id="videoBG" muted loop autoplay>
+            <source src="imag/phils-trim_.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h1>Wherever You Go</h1>
+            <h2>Go With All Your Heart</h2>
+        </div>
+        <div class="row">
+            <div class="content-column">
+                <p1></p1> 
+            </div>
+        </div>
+    </section>
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    
+        portfolioItems.forEach(portfolioItem => {
+           portfolioItem.addEventListener('mouseover', () => {
+               portfolioItem.childNodes[1].classList.add('img-darken');
+           })
+    
+           portfolioItem.addEventListener('mouseout', () => {
+               portfolioItem.childNodes[1].classList.remove('img-darken');
+            
+           })       
+        })
+    </script>
+    </body>
+    </html>
 
 </section>
 </body>
