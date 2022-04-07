@@ -635,3 +635,92 @@ nav-media .fa {
         cursor: pointer;
     }
 }
+
+/* Media page */
+.content-media {
+    width: 80%;
+    margin: auto;
+    text-align: start;
+    padding: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    color: #e9fffc;
+}
+
+.row {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*.content-column {
+    flex-basis: 100%;
+    background: #d4f1ed;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    transition: 0.5s;
+} */
+
+/*.content-column {
+    box-shadow: 0 0 17px 0px rgba(196, 212, 212, 0.7);
+} */
+
+p1 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em; 
+}
+
+p2 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em; 
+}
+
+p3 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em;  
+}
+
+p4 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em;
+}
+
+p5 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em;
+}
+
+.img-eye {
+    width: 190px;
+    height: 110px;
+    background-image: url(imag/aqi_2019.png);
+    background-size: 100%;
+} 
+
+#videoBG {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
