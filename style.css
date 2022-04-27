@@ -264,7 +264,7 @@ h1 {
 
 .content-section {
     float: left;
-    width: 62%;
+    width: 100%;
 }
 /*    float: left;
     width: 55%;
@@ -275,6 +275,7 @@ h1 {
 .image-section {
     float: right;
     width: 38%;
+    margin-right: 10px;
 }
 
 .image-section img{
@@ -291,8 +292,12 @@ h1 {
 }
 
 .content-section .content h3{
-    margin-top: 10px;
-    width: 300px;
+    margin-top: 5px;
+    padding-left:25px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    width: 500px;
     color:#1c2222;
     font-size: 26px;
 }
