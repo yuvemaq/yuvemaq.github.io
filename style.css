@@ -291,7 +291,8 @@ h1 {
 }
 
 .content-section .content h3{
-    margin-top: 20px;
+    margin-top: 10px;
+    width: 300px;
     color:#1c2222;
     font-size: 26px;
 }
