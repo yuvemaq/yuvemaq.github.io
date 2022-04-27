@@ -292,7 +292,7 @@ h1 {
 }
 
 .content-section .content h3{
-    margin-top: 5px;
+    margin-top: 7px;
     text-align: center;
     color:#1c2222;
     font-size: 26px;
@@ -300,7 +300,8 @@ h1 {
 
 .content-section .content p{
     text-align: left;
-    margin-top: 5px;
+    margin: auto;
+    margin-top: 7px;
     font-size: 22px;
     line-height: 1.5;
     color:#222929;
