@@ -246,7 +246,7 @@ h1 {
 .section {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(200, 230, 222);
+    background-color: rgb(235, 250, 252);
 }
 
 .container {
@@ -264,7 +264,7 @@ h1 {
 
 .content-section {
     float: left;
-    width: 100%;
+    width: 62%;
 }
 /*    float: left;
     width: 55%;
@@ -275,7 +275,6 @@ h1 {
 .image-section {
     float: right;
     width: 38%;
-    margin-right: 10px;
 }
 
 .image-section img{
@@ -287,24 +286,22 @@ h1 {
 .content-section .title {
     text-align: center;
     text-transform: uppercase;
-    font-size: 28px;
-    color:#262c2c;
+    font-size: 25px;
+    color:#26292b;
 }
 
 .content-section .content h3{
-    padding: 10px;
-    margin-top: 7px;
+    margin-top: 20px;
     color:#1c2222;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .content-section .content p{
     text-align: left;
-    margin: auto;
-    margin-top: 7px;
+    margin-top: 10px;
     font-size: 22px;
     line-height: 1.5;
-    color:#222929;
+    color:#26292b;
 }
 
 /* Nav styles for aboutme.html */
