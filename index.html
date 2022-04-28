@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<html lang="en-GB" prefix="og: http://ogp.me/ns#" class="is-chrome is-desktop" style="background: white;">
+<html lang="en-GB" prefix="og: http://ogp.me/ns#" class="is-chrome is-desktop" style="background: rgb(255, 255, 255);">
 <head>
     <meta charset="utf-8">
     <title>YMAQ</title>
+    <link rel="shortcut icon" href="imag/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Lateef&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="personalwebsite.html"></a>
-            <div class="nav-links active-nav-link" id="navLinks">
-                <i class="fa fa-window-close" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="aboutme.html">ABOUT</a></li>
-                    <li><a href="media.html">MEDIA</a></li>
-                    <li><a href="https://github.com/yuvemaq?tab=repositories">MY GITHUB</a></li>
-                </ul>
+            <div class = "navbar">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <a href ="#" class="navbar__link" id="navbarLinks">
+                    <span class="material-icons">home</span>Home
+                </a>
+                <a href ="aboutme.html" class="navbar__link">
+                    <span class="material-icons">info</span>ABOUT
+                </a>
+                <a href ="media.html" class="navbar__link">
+                    <span class="material-icons">link</span>MEDIA
+                </a>
+                <a href ="#" class="navbar__link">
+                    <span class="material-icons">feed</span>BLOG
+                </a>
+                <a href ="https://github.com/yuvemaq?tab=repositories" class="navbar__link">
+                    <span class="material-icons">hub</span>GITHUB
+                </a>
             </div>
-            <i class="fa fa-search-minus" onclick="showMenu()"></i>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 <div class="text-box">
     <h1>Welcome to My Website</h1>
     <p>Hi there! My name is Yvonne. This website contains anything and everything that I am and do. Have fun exploring!</p>
     <a href="https://www.amazon.com/hz/wishlist/ls/17VXVPZAG1VC1?type=wishlist&ref=cm_wl_list_create&relatedRequestID=6XSNRXDXNRDQ22JZVSX5" class="hero">Want to go shopping?</a>
 </div>
+    <button type="button" onmouseover="toggleNav()" style="float: right;">Menu</button>
     </section>
 
 <section class="content">
@@ -119,8 +131,21 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(imag/classifier.png)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="imag/logo7.png" alt="">
+                    </div>
+                <div class="subtitle-link-wrapper">
+                    <a href="https://github.com/yuvemaq/Personal-Projects/blob/main/Estimating%20when%20four%20natural%20resources%20will%20be%20depleted/Pre-Process%2C%20Training%2C%20and%20Modeling.ipynb">Machine Learning</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
             <div class="portfolio-img-background" style="background-image:url(imag/pgadmin.png)"></div>
 
             <div class="img-text-wrapper">
@@ -132,7 +157,8 @@
                     <a href="https://github.com/yuvemaq/PostgreSQL">SQL</a>
                 </div>
             </div>
-           
+        </div>
+
         </div>
     </div>
 </section>
@@ -140,6 +166,13 @@
 
 
 <script>
+    function toggleNav() {
+        document.querySelector(".navbar") .classList.toggle("navbar--open");
+    }
+
+    function appear() {
+        document.getElementById("button").style.display = "block";
+    }
     var navLinks= document.getElementById("navLinks");
     function showMenu() {
         navLinks.style.right = "0";
