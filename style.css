@@ -70,7 +70,6 @@ button {
     border: none;
     color: rgb(255, 255, 255);
     padding: 15px 32px;
-    float: left;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -519,6 +518,7 @@ nav-aboutme .fa {
         cursor: pointer;
     }
 }
+
 /* Nav styles for timeseries.html */
 .nav-timeseries {
     display: flex;
