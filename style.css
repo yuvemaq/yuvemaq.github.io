@@ -23,6 +23,7 @@ body {
 /* Nav styles */
 .navbar {
     position: fixed;
+    margin-top: 38px;
     top: 0;
     left: -200;
     width: 200px;
@@ -62,19 +63,52 @@ body {
     opacity: 1;
 }
 
-.button {
-    background-color: #4CAF50; /* Green */
+button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #614caf; 
     border: none;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 15px 32px;
+    float: left;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-  }
-.button:hover {
+    font-size: 1.20rem;
+    text-transform: uppercase;
+    font-family: "Lateef", sans-serif;
+    transition-duration: 0.4s;
+    width: 200px;
+    
+}
+button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+button:hover span {
+    padding-right: 25px;
+}
+  
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 
 .menu_container {
     width: 30%;
@@ -193,7 +227,7 @@ body {
 .hero:hover {
     border: 1px solid #0d0024;
     background: linear-gradient(to right, #9f1ee9, #3936f4);
-    transition: 0.5s;
+    transition: 0.8s;
 }
 nav .fa {
     display: none;
