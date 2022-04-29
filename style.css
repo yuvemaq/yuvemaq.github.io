@@ -277,6 +277,22 @@ nav .fa {
     color: #0d0024;
 }
 
+.image-container {
+    position: relative;
+}
+
+.image-section-home {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.image-section-home img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
 /* Portfolio styles */
 
 .portfolio-items-wrapper {
