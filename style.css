@@ -53,7 +53,8 @@ body {
 
 .navbar__link:active, a:hover{
     background: linear-gradient(to right, #9f1ee9, #3936f4);
-    transition: color 0.5s;
+    color: #0d0024;
+    transition: 0.7s;
 }
 
 .navbar--open {
