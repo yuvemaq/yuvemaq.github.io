@@ -13,6 +13,8 @@
 </head>
 <body>
     <section class="header">
+
+ <!----------------  Navigation   ------------------------------------->
         <nav>
             <a href="personalwebsite.html"></a>
             <div class = "navbar">
@@ -35,12 +37,14 @@
             </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+ <!----------------  Navigation   ------------------------------------->
+
 <div class="text-box">
     <h1>Welcome to My Website</h1>
     <p>Hi there! My name is Yvonne. This website contains anything and everything that I am and do. Have fun exploring!</p>
     <a href="https://www.amazon.com/hz/wishlist/ls/17VXVPZAG1VC1?type=wishlist&ref=cm_wl_list_create&relatedRequestID=6XSNRXDXNRDQ22JZVSX5" class="hero">Want to go shopping?</a>
 </div>
-    <button type="button" onmouseover="toggleNav()" style="float: right;">Menu</button>
+    <button type="button" onmouseover="toggleNav()" style="vertical-align:middle"><span>Menu</span></button>
     </section>
 
 <section class="content">
@@ -164,7 +168,7 @@
 </section>
 
 
-
+ <!----------------Custom Javascript-------------------------------------->
 <script>
     function toggleNav() {
         document.querySelector(".navbar") .classList.toggle("navbar--open");
