@@ -374,7 +374,7 @@ nav .fa {
 .section {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(235, 250, 252);
+    background-color: rgb(255, 255, 255);
 }
 
 .container {
@@ -406,28 +406,32 @@ nav .fa {
 }
 
 .image-section img{
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-radius: 50%;
 }
 
-.content-section .title {
+.content-section .title h1{
     text-align: center;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: px;
     color:#26292b;
 }
 
+
 .content-section .content h3{
     margin-top: 20px;
-    color:#1c2222;
+    color:#26262c;
     font-size: 26px;
 }
 
 .content-section .content p{
     text-align: left;
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 23px;
     line-height: 1.5;
     color:#222929;
 }
@@ -458,25 +462,25 @@ nav .fa {
 }
 
 .nav-aboutme-links ul li a {
-    color: #191f1f;
+    color: #cac9cc;
     text-decoration: none;
     transition: color 0.5s;
     font-size: 1.3em; 
 }
 
 .nav-aboutme-links:hover {
-    border-bottom: 1x solid rgb(85, 122, 122);
+    border-bottom: 1x solid rgb(50, 20, 185);
 }
 
 .nav-aboutme-links a:hover {
-    color: rgb(91, 148, 148);
+    color: rgb(80, 3, 204);
 }
 
 .nav-aboutme-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: rgb(112, 121, 124);
+    background: rgb(76, 58, 126);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -499,7 +503,7 @@ nav-aboutme .fa {
     }
     .nav-links {
         position: absolute;
-        background: #8fc3ca;
+        background: #422c75;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -515,7 +519,6 @@ nav-aboutme .fa {
         cursor: pointer;
     }
 }
-
 /* Nav styles for timeseries.html */
 .nav-timeseries {
     display: flex;
