@@ -8,7 +8,7 @@
 
 /* For celll view - Samsung Galaxy s20 ultra! */
 
-@media only screen and (min-width: 1000px) {
+/*@media only screen and (min-width: 1000px) {
     .header {
         width: 1000px;
     }
@@ -123,7 +123,7 @@
         filter: brightness(10%);
     }
     
-    /* Subtitle */
+    /* Subtitle *//*
     .subtitle-link-wrapper a {
         color: rgb(251, 253, 253);
         text-decoration: none;
@@ -140,7 +140,7 @@
     }
     
 
-}
+} */
 
 /* Header */
 .header {
