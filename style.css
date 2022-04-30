@@ -45,7 +45,15 @@
         width: 1000px;
     }
     
-    .content h1 {
+    .content h3 {
+        padding: 20px 0px 0px 30px;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 0.13em;
+        color: #0d0024;
+    }
+    
+    .content p {
         padding: 20px 0px 0px 30px;
         font-size: 40px;
         font-weight: 600;
