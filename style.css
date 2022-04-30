@@ -6,6 +6,134 @@
     font-family: "Lateef", sans-serif;
 }
 
+/* For celll view - Samsung Galaxy s20 ultra! */
+
+/*@media only screen and (min-width: 1000px) {
+    .header {
+        width: 1000px;
+    }
+
+    .image-container {
+        width: 50%;
+        float: right;
+    }
+
+    .text-box h1 {
+        padding: 20px 0px 0px 30px;
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        color:rgb(41, 40, 46);
+        font-size: 50px;
+    }
+    
+    .text-box p {
+        padding: 20px 0px 0px 30px;
+        font-size: 19.5px;
+        font-style: oblique;
+        letter-spacing: 0.1em;
+        color: #2a2a31;
+    }
+    
+    .image-section-home img {
+        padding-top: 0px;
+        width: 50%;
+        float: left;
+    }
+
+    .content {
+        width: 1000px;
+    }
+    
+    .content h1 {
+        padding: 20px 0px 0px 30px;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 0.13em;
+        color: #0d0024;
+    }
+
+    .portfolio-items-wrapper {
+        width: 50%;
+        float: right;
+        padding-top: 0px;
+        margin-top: 5%;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+    .portfolio-item-wrapper {
+        position: relative;
+    }
+    
+    .portfolio-img-background {
+        height: 100px;
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .portfolio-items-wrapper-bright {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio-item-wrapper-bright {
+        position: relative;
+    }
+    
+    .img-text-wrapper {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .logo-wrapper img {
+        width: 50%;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .img-text-wrapper .subtitle {
+        transition: 1s;
+        font-weight: 600;
+        color: transparent;
+    }
+    
+    .img-darken {
+        transition: 1s;
+        filter: brightness(10%);
+    }
+    
+    /* Subtitle *//*
+    .subtitle-link-wrapper a {
+        color: rgb(251, 253, 253);
+        text-decoration: none;
+        font-size: 1.5em;
+        font-family: "Lateef", sans-serif;
+    }
+    
+    .subtitle-link-wrapper a {
+        color: rgb(180, 202, 196);
+        text-decoration: none;
+        font-family: "Lateef", sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+
+}*/
+
 /* Header */
 .header {
     min-height: 100vh;
@@ -520,14 +648,14 @@ nav-aboutme .fa {
 }
 
 /* Nav styles for timeseries.html */
-.nav-timeseries {
+.nav-blog {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-timeseries-links {
+.nav-blog-links {
     padding: 38px;
     height: 22px;
     margin-right: 48px;
@@ -536,7 +664,7 @@ nav-aboutme .fa {
     text-transform: uppercase;
 }
 
-.nav-timeseries-links ul li {
+.nav-blog-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
@@ -544,22 +672,22 @@ nav-aboutme .fa {
     transition: border-bottom 0.5s;
 }
 
-.nav-timeseries-links ul li a {
+.nav-blog-links ul li a {
     color: #8ea3a0;
     text-decoration: none;
     transition: color 0.5s;
     font-size: 1.3em; 
 }
 
-.nav-timeseries-links:hover {
+.nav-blog-links:hover {
     border-bottom: 1x solid rgb(27, 29, 29);
 }
 
-.nav-timeseries-links a:hover {
+.nav-blog-links a:hover {
     color: rgb(31, 32, 32);
 }
 
-.nav-timeseries-links ul li::after {
+.nav-blog-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -569,11 +697,11 @@ nav-aboutme .fa {
     transition: 0.5s;
 }
 
-.nav-timeseries-links ul li:hover::after {
+.nav-blog-links ul li:hover::after {
     width: 100%;
 }
 
-nav-timeseries .fa {
+.nav-blog .fa {
     display: none;
 }
 
@@ -607,8 +735,8 @@ nav .fa {
     }
 }
 
-/* Time series page */
-.content-timeseries {
+/* Blog page */
+.content-blog {
     width: 80%;
     margin: auto;
     text-align: start;
