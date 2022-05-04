@@ -8,7 +8,7 @@
 
 /* For celll view - Samsung Galaxy s20 ultra! */
 
-/*@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
     .header {
         width: 1000px;
     }
@@ -22,6 +22,7 @@
         padding: 20px 0px 0px 30px;
         font-size: 40px;
         text-transform: uppercase;
+        text-align: center;
         letter-spacing: 0.13em;
         color:rgb(41, 40, 46);
         font-size: 50px;
@@ -29,6 +30,7 @@
     
     .text-box p {
         padding: 20px 0px 0px 30px;
+        text-align: center;
         font-size: 19.5px;
         font-style: oblique;
         letter-spacing: 0.1em;
@@ -41,29 +43,29 @@
         float: left;
     }
 
-    .content {
+    .content-section {
         width: 1000px;
     }
     
-    .content h3 {
+    .content h1 {
         padding: 20px 0px 0px 30px;
-        font-size: 40px;
+        font-size: 10px;
         font-weight: 600;
         letter-spacing: 0.13em;
         color: #0d0024;
     }
-    
+
     .content p {
         padding: 20px 0px 0px 30px;
-        font-size: 40px;
+        font-size: 10px;
         font-weight: 600;
         letter-spacing: 0.13em;
         color: #0d0024;
     }
 
     .portfolio-items-wrapper {
-        width: 50%;
-        float: right;
+        height: auto;
+        width: 100%;
         padding-top: 0px;
         margin-top: 5%;
         display: grid;
@@ -123,7 +125,7 @@
         filter: brightness(10%);
     }
     
-    /* Subtitle *//*
+    /* Subtitle */
     .subtitle-link-wrapper a {
         color: rgb(251, 253, 253);
         text-decoration: none;
@@ -139,8 +141,19 @@
         text-align: center;
     }
     
+    .image-section img {
+        padding-top: 0px;
+        width: 50%;
+        float: right;
+        width: 30%;
+        height: auto;
+        display: block;
+        border: 10px solid transparent;
+        padding: 15px;
+        border-radius: 50%;
+    }
 
-} */
+}
 
 /* Header */
 .header {
@@ -334,12 +347,14 @@ button:hover span:after {
 .text-box h1 {
     font-size: 40px;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 0.13em;
     color:rgb(41, 40, 46);
 }
 
 .text-box p {
     margin: 10px 0 40px;
+    text-align: center;
     font-size: 19.5px;
     font-style: oblique;
     letter-spacing: 0.1em;
@@ -513,21 +528,20 @@ nav .fa {
 }
 
 .container {
-    width: 90%;
-    display: block;
-    margin: auto;
-    justify-content: space-between;
-    padding-top: 100px;
-    padding-right: 100px;
-    padding-left: 100px;
+    display: flex;
+	width: 90%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
 }
 /*    margin-top: 5%;
     display: grid;
     justify-content: space-evenly; */
 
 .content-section {
+    flex: 1;
     float: left;
-    width: 62%;
+    width: 65%;
 }
 /*    float: left;
     width: 55%;
@@ -536,46 +550,52 @@ nav .fa {
     height: 700px; */
 
 .image-section {
-    float: right;
-    width: 38%;
+    justify-content: flex-end;
+    height: 100%;
+    float: left;
+    width: 35%;
 }
 
 .image-section img{
-    width: 80%;
+    width: 74%;
     height: auto;
-    display: block;
+    display: flex;
     border: 10px solid transparent;
-    padding: 15px;
+    padding: 18px;
     border-radius: 50%;
 }
 
-.content-section .title h1{
+.content-section h1{
+    margin-top: 10px;
     text-align: center;
     text-transform: uppercase;
-    font-size: px;
-    color:#26292b;
+    font-size: 45px;
+    color:#cfcfd6;
 }
 
 
-.content-section .content h3{
-    margin-top: 20px;
-    color:#26262c;
+.content-section h3{
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color:#cfcfd6;
     font-size: 26px;
 }
 
-.content-section .content p{
+.content-section p { 
     text-align: left;
     margin-top: 10px;
     font-size: 23px;
     line-height: 1.5;
-    color:#222929;
+    color:#cfcfd6;
+    justify-content: space-around;
 }
 
 /* Nav styles for aboutme.html */
 .nav-aboutme {
     display: flex;
     padding: 2% 6%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -629,7 +649,7 @@ nav-aboutme .fa {
     display: none;
 }
 
-@media(max-width: 700px){
+/*@media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
     }
@@ -653,6 +673,61 @@ nav-aboutme .fa {
         font-size: 22px;
         cursor: pointer;
     }
+} */
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.section {
+		flex-direction: column;
+	}
+	.content-section {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.content-section h1 {
+		padding: 20px 0px 0px 30px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color:rgb(210, 209, 216);
+	}
+    
+    .content-section h3 {
+		padding: 20px 0px 0px 30px;
+        font-size: 20px;
+        color: #f8f8fa;
+	}
+
+    .content-section p {
+		padding: 20px 0px 0px 30px;
+        font-size: 16px;
+        color: #f8f8fa;
+	}
+
+	.laptop-select {
+		bottom: 5%;
+		right: 50%;
+		width: 50%;
+		transform: translate(50%, 5%);
+	}
+	.image-section img {
+		height: auto;
+        width: 100%;
+	}
+	.small-circle,
+	.medium-circle,
+	.big-circle {
+		opacity: 0.2;
+	}
 }
 
 /* Nav styles for timeseries.html */
