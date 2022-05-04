@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
             <i class="fa fa-window-close" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="aboutme.html">ABOUT</a></li>
+                <li><a href="aboutme.html active-nav-link">ABOUT</a></li>
                 <li><a href="media.html">MEDIA</a></li>
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="https://github.com/yuvemaq?tab=repositories">MY GITHUB</a></li>
@@ -23,22 +24,19 @@
         </div>
         <i class="fa fa-search-minus" onclick="showMenu()"></i>
     </nav>
-    <div class="section">
+    <section>
         <div class="container">
             <div class="content-section">
-                <div class="title">
-                    <h1>About Me</h1>
-                </div>
-                <div class="content">
-                    <h3>Data Analyst & Clinical Pharmacy Technician</h3>
-                    <p>My interest in data analysis started from a seminar I took in college on Survey of Research Human Subjects where I learned about the history of clinical trials and the world’s progress in protections to human subjects in research. I learned that compared to past methods of data collection, gathering, and reporting, in today’s world where technology is advanced when it is applied to sophisticated methods such as statistical analysis plans in clinical trials, it surpasses the old way in aspects such as efficacy, validity, safety, and reproducibility tenfold. Working at a hospital pharmacy during the covid-19 pandemic, along with my keen interest in data engineering, it provided the impetus for me to pursue a career in data analysis. My goal is to one day work as a data scientist.</p>
-                </div>
+                <h1>About Me</h1>
+                <h3>Data Analyst & Clinical Pharmacy Technician</h3>
+                <p>My interest in data analysis started from a seminar I took in college on Survey of Research Human Subjects where I learned about the history of clinical trials and the world’s progress in protections to human subjects in research. I learned that compared to past methods of data collection, gathering, and reporting, in today’s world where technology is advanced when it is applied to sophisticated methods such as statistical analysis plans in clinical trials, it surpasses the old way in aspects such as efficacy, validity, safety, and reproducibility tenfold. Working at a hospital pharmacy during the covid-19 pandemic, along with my keen interest in data engineering, it provided the impetus for me to pursue a career in data analysis. My goal is to one day work as a data scientist.</p>
             </div>
             <div class="image-section">
-                <img src="imag/myface5.jpg" alt="">
+                <img src="imag/myface5.jpg" alt="" sizes="(max-width: 600px) 480px, 800px" class="responsive">
             </div>
         </div>
-    </div>
+    </section>
+
 <script>
     var navLinks= document.getElementById("navLinks");
     function showMenu() {
