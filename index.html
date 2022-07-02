@@ -1,215 +1,1153 @@
-<!DOCTYPE html>
-<html lang="en-GB" prefix="og: http://ogp.me/ns#" class="is-chrome is-desktop" style="background: rgb(255, 255, 255);">
-<head>
-    <meta charset="utf-8">
-    <title>YMAQ</title>
-    <link rel="shortcut icon" href="imag/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Lateef&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-</head>
-<body>
-    <section class="header">
+/* Master styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lateef", sans-serif;
+}
 
- <!----------------  Navigation   ------------------------------------->
-        <nav>
-            <a href="index.html"></a>
-            <div class = "navbar">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <a href ="#" class="navbar__link" id="navbarLinks">
-                    <span class="material-icons">home</span>Home
-                </a>
-                <a href ="aboutme.html" class="navbar__link">
-                    <span class="material-icons">info</span>ABOUT
-                </a>
-                <a href ="media.html" class="navbar__link">
-                    <span class="material-icons">link</span>MEDIA
-                </a>
-                <a href ="blog.html" class="navbar__link">
-                    <span class="material-icons">feed</span>BLOG
-                </a>
-                <a href ="https://github.com/yuvemaq?tab=repositories" class="navbar__link">
-                    <span class="material-icons">hub</span>GITHUB
-                </a>
-            </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
- <!----------------  Navigation   ------------------------------------->
-<div class="image-container">
-    <div class="image-section-home">
-        <img src="imag/brandlogo.png" alt="" class="responsive">
-</div>
-</div>
-<!-----------------  Introduction/Content  --------------------------------->
-<div class="text-box">
-    <h1>Welcome to My Website</h1>
-    <p>Hi there! My name is Yvonne. This website contains anything and everything that I am and do. Have fun exploring!</p>
-    <a href="https://www.amazon.com/hz/wishlist/ls/17VXVPZAG1VC1?type=wishlist&ref=cm_wl_list_create&relatedRequestID=6XSNRXDXNRDQ22JZVSX5" class="hero">Want to go shopping?</a>
-</div>
-    <button type="button" onmouseover="toggleNav()" style="vertical-align:middle"><span>Menu</span></button>
-    </section>
-<div class="email">
-    <h1 class="email">Send a message</h1>
-        <form action="https://formsubmit.co/ymaq203@gmail.com" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="email" name="email" placeholder="Email Address" required>
-            <input type="hidden" name="_next" value="https://ymaqweb.z13.web.core.windows.net/thanks.html">
-            <input type="text" name="Message" placeholder="Write your message here" required>
-            <button type="submit">Send</button>
-        </form>
-</div>
+/* For celll view - Samsung Galaxy s20 ultra! */
 
-<section class="content">
-    <h1>Projects</h1>
-
-    <div class="content-wrapper">
-        <div class="portfolio-items-wrapper">
-            
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(imag/AQIvalues.png)"></div>
-
-                <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="imag/logo2.png" alt="" class="responsive">
-                    </div>
-
-                    <div class="subtitle-link-wrapper">
-                        <a href="https://github.com/yuvemaq/Personal-Projects/tree/master">Time Series and MA Models</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(imag/map_bur_price.png)"></div>
-
-                <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="imag/logo3.png" alt="" class="responsive">
-                    </div>
-
-                    <div class="subtitle-link-wrapper">
-                        <a href="https://github.com/yuvemaq/Personal-Projects/tree/main/Capstone-Traditional-vs-Nontraditional-Burial-Analysis-main">Analysis on Burial Types and Costs in the UK</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(imag/machine_learn.png)"></div>
-
-                <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="imag/logo5.png" alt="" class="responsive">
-                    </div>
-
-                    <div class="subtitle-link-wrapper">
-                        <a href="https://github.com/yuvemaq/Personal-Projects/blob/main/Estimating%20when%20four%20natural%20resources%20will%20be%20depleted/Pre-Process%2C%20Training%2C%20and%20Modeling.ipynb">Classification</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(imag/pie.png)"></div>
-
-                <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="imag/logo6.png" alt="" class="responsive">
-                    </div>
-
-                    <div class="subtitle-link-wrapper">
-                        <a href="https://github.com/yuvemaq/Personal-Projects/tree/main/Trend%20Forecasting">Web Scraping</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(imag/classifier.png)"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="imag/logo7.png" alt="" class="responsive">
-                        </div>
-                    <div class="subtitle-link-wrapper">
-                        <a href="https://github.com/yuvemaq/Personal-Projects/blob/main/Estimating%20when%20four%20natural%20resources%20will%20be%20depleted/Pre-Process%2C%20Training%2C%20and%20Modeling.ipynb">Machine Learning</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(imag/springboard.png)"></div>
-
-                <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="imag/logo8.png" alt="" class="responsive">
-                    </div>
-
-                    <div class="subtitle-link-wrapper">
-                        <a href="https://github.com/yuvemaq/Springboard_">Springboard</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(imag/classifier.png)"></div>
-
-                <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="imag/logo7.png" alt="" class="responsive">
-                    </div>
-                <div class="subtitle-link-wrapper">
-                    <a href="https://github.com/yuvemaq/Personal-Projects/blob/main/Estimating%20when%20four%20natural%20resources%20will%20be%20depleted/Pre-Process%2C%20Training%2C%20and%20Modeling.ipynb">Machine Learning</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-            <div class="portfolio-img-background" style="background-image:url(imag/pgadmin.png)"></div>
-
-            <div class="img-text-wrapper">
-                <div class="logo-wrapper">
-                    <img src="imag/logo9.png" alt="" class="responsive">
-                </div>
-
-                <div class="subtitle-link-wrapper">
-                    <a href="https://github.com/yuvemaq/PostgreSQL">SQL</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
- <!----------------Custom Javascript-------------------------------------->
-<script>
-    function toggleNav() {
-        document.querySelector(".navbar") .classList.toggle("navbar--open");
+@media screen and (max-width: 600px) {
+    .header {
+        width: 90%;
     }
 
-    function appear() {
-        document.getElementById("button").style.display = "block";
+    .image-container {
+        width: 50%;
+        flex-direction: column-reverse;
     }
-    var navLinks= document.getElementById("navLinks");
-    function showMenu() {
-        navLinks.style.right = "0";
-    }
-    function hideMenu() {
-        navLinks.style.right = "-200px";
-    }
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
 
-    portfolioItems.forEach(portfolioItem => {
-       portfolioItem.addEventListener('mouseover', () => {
-           portfolioItem.childNodes[1].classList.add('img-darken');
-       })
+    .text-box h1 {
+        padding: 20px 0px 0px 30px;
+        font-size: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.13em;
+        color:rgb(41, 40, 46);
+        font-size: 50px;
+    }
+    
+    .text-box p {
+        padding: 20px 0px 0px 30px;
+        text-align: center;
+        font-size: 19.5px;
+        font-style: oblique;
+        letter-spacing: 0.1em;
+        color: #2a2a31;
+    }
+    
+    .image-section-home img {
+        padding-top: 0px;
+        width: 50%;
+        float: left;
+    }
 
-       portfolioItem.addEventListener('mouseout', () => {
-           portfolioItem.childNodes[1].classList.remove('img-darken');
-        
-       })       
-    })
-</script>
-</body>
-</html>
+    .email {
+        width: 1000px;
+    }
+
+    .email h1 {
+        padding: 20px 0px 0px 30px;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.13em;
+        color: #0d0024;
+    }
+
+    .content-section {
+        width: 1000px;
+    }
+    
+    .content h1 {
+        padding: 20px 0px 0px 30px;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.13em;
+        color: #0d0024;
+    }
+
+    .content p {
+        padding: 20px 0px 0px 30px;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.13em;
+        color: #0d0024;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-items-wrapper {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(3,1fr);
+    }
+
+
+    .portfolio-items-wrapper {
+        height: auto;
+        width: 100%;
+        padding-top: 0px;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+    .portfolio-item-wrapper {
+        position: relative;
+    }
+    
+    .portfolio-img-background {
+        height: 100px;
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .portfolio-items-wrapper-bright {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio-item-wrapper-bright {
+        position: relative;
+    }
+    
+    .img-text-wrapper {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .logo-wrapper img {
+        width: 50%;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .img-text-wrapper .subtitle {
+        transition: 1s;
+        font-weight: 600;
+        color: transparent;
+    }
+    
+    .img-darken {
+        transition: 1s;
+        filter: brightness(10%);
+    }
+    
+    /* Subtitle */
+    .subtitle-link-wrapper a {
+        color: rgb(251, 253, 253);
+        text-decoration: none;
+        font-size: 1.5em;
+        font-family: "Lateef", sans-serif;
+    }
+    
+    .subtitle-link-wrapper a {
+        color: rgb(180, 202, 196);
+        text-decoration: none;
+        font-family: "Lateef", sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    .image-section img {
+        padding-top: 0px;
+        width: 50%;
+        float: right;
+        width: 30%;
+        height: auto;
+        display: block;
+        border: 10px solid transparent;
+        padding: 15px;
+        border-radius: 50%;
+    }
+
+}
+
+/* Header */
+.header {
+    min-height: 100vh;
+    width: 100%;
+/*    background-image: radial-gradient(rgba(6, 4, 27, 0.7),rgba(3, 9, 22, 0.7)),url(imag/cabos.jpeg); 
+    background-position: center;
+    background-size: cover;
+    position: relative; */
+}
+
+body {
+    font-family: "Lateef", sans-serif;
+}
+
+/* Nav styles */
+.navbar {
+    position: fixed;
+    margin-top: 38px;
+    top: 0;
+    left: -200;
+    width: 200px;
+    height: 100%;
+    background: #0d0024;
+    border-right: 2px solid #442d68;
+    opacity: 0;
+}
+
+.navbar__link {
+    display: flex;
+    align-items: center;
+    background: #0d0024;
+    color:rgb(255, 255, 255);
+    padding: 28px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.20rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #442d68;
+    font-family: "Lateef", sans-serif;
+    transition: color 0.5s;
+}
+
+.navbar__link .material-icons {
+    margin-right: 12px;
+}
+
+.navbar__link:active, a:hover{
+    background: linear-gradient(to right, #8a49d4, #769ff7);
+    color: #0d0024;
+    transition: 0.7s;
+}
+
+.navbar--open {
+    left: 0;
+    opacity: 1;
+}
+
+button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #614caf; 
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.20rem;
+    text-transform: uppercase;
+    font-family: "Lateef", sans-serif;
+    transition-duration: 0.4s;
+    width: 200px;
+    
+}
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+button:hover span {
+    padding-right: 25px;
+}
+  
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*.menu_container {
+    width: 30%;
+    height: 100vh;
+    background: #0d0024;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    width: 80px;
+    height: 100px;
+    margin: 5px;
+    background-image: linear-gradient(to right, #e91e63, #f44336);
+}
+
+.nav { 
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+@media screen and (max-width: 700px) {
+    
+    .navbar__link {
+        padding: 38px;
+        height: 22px;
+        margin-right: 48px;
+        flex: 1;
+        text-align: right;
+        text-transform: uppercase;
+    }
+    
+    .navbar__link ul li {
+        list-style: none;
+        display: flex;
+        padding: 8px 12px;
+        position: relative;
+        transition: border-bottom 0.5s;
+    }
+
+    .navbar__link ul li a {
+        color: #cac9cc;
+        text-decoration: none;
+        transition: color 0.5s;
+        font-size: 1.3em; 
+    }
+    
+    .navbar__link:hover {
+        border-bottom: 1x solid rgb(50, 20, 185);
+    }
+    
+    .navbar__link a:hover {
+        color: rgb(80, 3, 204);
+    }
+    
+    .navbar__link ul li::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: rgb(76, 58, 126);
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    
+    .navbar__link ul li:hover::after {
+        width: 100%;
+    }
+    
+    .navbar__link .fa {
+        display: none;
+    
+    }
+    .navbar__link {
+        position: absolute;
+        background: #8fc3ca;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .navbar__link .fa{
+        display: block;
+        color: rgb(49, 29, 102);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+    
+    @keyframes drop {
+        0% {
+            opacity: 0;
+            transform: translateY(-80px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+/*Email*/
+.email {
+    color: #0d0024;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.email h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    color: #0d0024;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Text box */
+.text-box {
+    width: 90%;
+    color: #2b0f91;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    text-align: center;
+
+}
+
+.text-box a {
+    font-family: "Lateef", sans-serif;
+    font-style: italic;
+}
+
+.text-box h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.13em;
+    color:rgb(41, 40, 46);
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    text-align: center;
+    font-size: 19.5px;
+    font-style: oblique;
+    letter-spacing: 0.1em;
+    color: #2a2a31;
+}
+
+.hero {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 23px;
+    font-style: normal;
+    border: 1px solid #242327; 
+    padding: 12px 34px;
+    background: #0d0024;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero:hover {
+    border: 1px solid #769ff7;
+    background: linear-gradient(to right, #8a49d4, #769ff7);
+    transition: 0.8s;
+}
+nav .fa {
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .navbar__link {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar__link {
+        position: absolute;
+        background: #241449;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200;
+        text-align: left;
+        z-index: 2;
+    }
+    .navbar .fa{
+        display: block;
+        color: rgb(37, 26, 70);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navbar ul {
+        padding: 30px;
+
+    }
+}
+
+/* Content */
+.content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+
+.content h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    color: #0d0024;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-section-home {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.image-section-home img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+/* Portfolio styles */
+
+.portfolio-items-wrapper {
+    margin-top: 5%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio-items-wrapper-bright {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.portfolio-item-wrapper-bright {
+    position: relative;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/* Subtitle */
+.subtitle-link-wrapper a {
+    color: rgb(251, 253, 253);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: "Lateef", sans-serif;
+}
+
+.subtitle-link-wrapper a {
+    color: rgb(180, 202, 196);
+    text-decoration: none;
+    font-family: "Lateef", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* About page */
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+	width: 90%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
+}
+/*    margin-top: 5%;
+    display: grid;
+    justify-content: space-evenly; */
+
+.content-section {
+    flex: 1;
+    float: left;
+    width: 65%;
+}
+/*    float: left;
+    width: 55%;
+    top: 40px;
+    width: 700px;
+    height: 700px; */
+
+.image-section {
+    justify-content: flex-end;
+    height: 100%;
+    float: left;
+    width: 35%;
+}
+
+.image-section img{
+    width: 74%;
+    height: auto;
+    display: flex;
+    border: 10px solid transparent;
+    padding: 18px;
+    border-radius: 50%;
+}
+
+.content-section h1{
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    color:#cfcfd6;
+}
+
+
+.content-section h3{
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color:#cfcfd6;
+    font-size: 26px;
+}
+
+.content-section p { 
+    text-align: left;
+    margin-top: 10px;
+    font-size: 23px;
+    line-height: 1.5;
+    color:#cfcfd6;
+    justify-content: space-around;
+}
+
+/* Nav styles for aboutme.html */
+.nav-aboutme {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-aboutme-links {
+    padding: 38px;
+    height: 22px;
+    margin-right: 48px;
+    flex: 1;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.nav-aboutme-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    transition: border-bottom 0.5s;
+}
+
+.nav-aboutme-links ul li a {
+    color: #cac9cc;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 1.3em; 
+}
+
+.nav-aboutme-links:hover {
+    border-bottom: 1x solid rgb(102, 122, 231);
+}
+
+.nav-aboutme-links a:hover {
+    color: rgb(76, 58, 126);
+}
+
+.nav-aboutme-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(76, 58, 126);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-aboutme-links ul li:hover::after {
+    width: 100%;
+}
+
+nav-aboutme .fa {
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #422c75;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+} 
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.section {
+		flex-direction: column;
+	}
+	.content-section {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.content-section h1 {
+		padding: 20px 0px 0px 30px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color:rgb(210, 209, 216);
+	}
+    
+    .content-section h3 {
+		padding: 20px 0px 0px 30px;
+        font-size: 20px;
+        color: #f8f8fa;
+	}
+
+    .content-section p {
+		padding: 20px 0px 0px 30px;
+        font-size: 16px;
+        color: #f8f8fa;
+	}
+
+	.laptop-select {
+		bottom: 5%;
+		right: 50%;
+		width: 50%;
+		transform: translate(50%, 5%);
+	}
+	.image-section img {
+		height: auto;
+        width: 100%;
+	}
+	.small-circle,
+	.medium-circle,
+	.big-circle {
+		opacity: 0.2;
+	}
+}
+
+/* Nav styles for timeseries.html */
+.nav-blog {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-blog-links {
+    padding: 38px;
+    height: 22px;
+    margin-right: 48px;
+    flex: 1;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.nav-blog-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    transition: border-bottom 0.5s;
+}
+
+.nav-blog-links ul li a {
+    color: #8ea3a0;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 1.3em; 
+}
+
+.nav-blog-links:hover {
+    border-bottom: 1x solid rgb(27, 29, 29);
+}
+
+.nav-blog-links a:hover {
+    color: rgb(31, 32, 32);
+}
+
+.nav-blog-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(39, 41, 40);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-blog-links ul li:hover::after {
+    width: 100%;
+}
+
+.nav-blog .fa {
+    display: none;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #8fc3ca;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .nav-links .fa{
+        display: block;
+        color: rgb(49, 29, 102);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+/* Blog page */
+.content-blog {
+    width: 80%;
+    margin: auto;
+    text-align: start;
+    padding: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+}
+
+.row {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+/*.content-column {
+    flex-basis: 100%;
+    background: #d4f1ed;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    transition: 0.5s;
+} */
+
+/*.content-column {
+    box-shadow: 0 0 17px 0px rgba(196, 212, 212, 0.7); 
+} */
+
+p1 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em; 
+}
+
+p2 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em; 
+}
+
+p3 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em;  
+}
+
+p4 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em;
+}
+
+p5 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em;
+}
+
+.img-eye {
+    width: 190px;
+    height: 110px;
+    background-image: url(imag/aqi_2019.png);
+    background-size: 100%;
+} 
+
+/* Nav styles for media.html */
+.nav-media {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-media-links {
+    padding: 38px;
+    height: 22px;
+    margin-right: 48px;
+    flex: 1;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.nav-media-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    transition: border-bottom 0.5s;
+}
+
+.nav-media-links ul li a {
+    color: #8ea3a0;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 1.3em; 
+}
+
+.nav-media-links:hover {
+    border-bottom: 1x solid rgb(217, 255, 255);
+}
+
+.nav-media-links a:hover {
+    color: rgb(226, 255, 254);
+}
+
+.nav-media-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(197, 255, 240);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-media-links ul li:hover::after {
+    width: 100%;
+}
+
+nav-media .fa {
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #8fc3ca;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+/* Media page */
+.content-media {
+    width: 80%;
+    margin: auto;
+    text-align: start;
+    padding: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    color: #e9fffc;
+}
+
+.row {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*.content-column {
+    flex-basis: 100%;
+    background: #d4f1ed;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    transition: 0.5s;
+} */
+
+/*.content-column {
+    box-shadow: 0 0 17px 0px rgba(196, 212, 212, 0.7);
+} */
+
+p1 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em; 
+}
+
+p2 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em; 
+}
+
+p3 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em;  
+}
+
+p4 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em;
+}
+
+p5 {
+    text-align: match-parent;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 0.03em;
+}
+
+.img-eye {
+    width: 190px;
+    height: 110px;
+    background-image: url(imag/aqi_2019.png);
+    background-size: 100%;
+} 
+
+#videoBG {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
