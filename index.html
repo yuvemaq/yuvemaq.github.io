@@ -17,7 +17,7 @@
 
  <!----------------  Navigation   ------------------------------------->
         <nav>
-            <a href="personalwebsite.html"></a>
+            <a href="index.html"></a>
             <div class = "navbar">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <a href ="#" class="navbar__link" id="navbarLinks">
@@ -44,6 +44,7 @@
         <img src="imag/brandlogo.png" alt="" class="responsive">
 </div>
 </div>
+<!-----------------  Introduction/Content  --------------------------------->
 <div class="text-box">
     <h1>Welcome to My Website</h1>
     <p>Hi there! My name is Yvonne. This website contains anything and everything that I am and do. Have fun exploring!</p>
@@ -51,6 +52,16 @@
 </div>
     <button type="button" onmouseover="toggleNav()" style="vertical-align:middle"><span>Menu</span></button>
     </section>
+<div class="email">
+    <h1 class="email">Send a message</h1>
+        <form action="https://formsubmit.co/ymaq203@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="hidden" name="_next" value="https://ymaqweb.z13.web.core.windows.net/thanks.html">
+            <input type="text" name="Message" placeholder="Write your message here" required>
+            <button type="submit">Send</button>
+        </form>
+</div>
 
 <section class="content">
     <h1>Projects</h1>
@@ -166,8 +177,6 @@
                     <a href="https://github.com/yuvemaq/PostgreSQL">SQL</a>
                 </div>
             </div>
-        </div>
-
         </div>
     </div>
 </section>
