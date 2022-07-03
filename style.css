@@ -8,14 +8,14 @@
 
 /* For celll view - Samsung Galaxy s20 ultra! */
 
-@media only screen and (min-width: 1000px) {
+@media screen and (max-width: 600px) {
     .header {
-        width: 1000px;
+        width: 90%;
     }
 
     .image-container {
         width: 50%;
-        float: right;
+        flex-direction: column-reverse;
     }
 
     .text-box h1 {
@@ -43,6 +43,18 @@
         float: left;
     }
 
+    .email {
+        width: 1000px;
+    }
+
+    .email h1 {
+        padding: 20px 0px 0px 30px;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.13em;
+        color: #0d0024;
+    }
+
     .content-section {
         width: 1000px;
     }
@@ -63,13 +75,26 @@
         color: #0d0024;
     }
 
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-items-wrapper {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(3,1fr);
+    }
+
+
     .portfolio-items-wrapper {
         height: auto;
         width: 100%;
         padding-top: 0px;
         margin-top: 5%;
-        display: grid;
-        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
         grid-template-columns: repeat(3,1fr);
     }
     
@@ -202,7 +227,7 @@ body {
 }
 
 .navbar__link:active, a:hover{
-    background: linear-gradient(to right, #9f1ee9, #3936f4);
+    background: linear-gradient(to right, #8a49d4, #769ff7);
     color: #0d0024;
     transition: 0.7s;
 }
@@ -258,7 +283,7 @@ button:hover span:after {
     right: 0;
 }
 
-.menu_container {
+/*.menu_container {
     width: 30%;
     height: 100vh;
     background: #0d0024;
@@ -279,52 +304,105 @@ button:hover span:after {
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+} */
+
+@media screen and (max-width: 700px) {
+    
+    .navbar__link {
+        padding: 38px;
+        height: 22px;
+        margin-right: 48px;
+        flex: 1;
+        text-align: right;
+        text-transform: uppercase;
+    }
+    
+    .navbar__link ul li {
+        list-style: none;
+        display: flex;
+        padding: 8px 12px;
+        position: relative;
+        transition: border-bottom 0.5s;
+    }
+
+    .navbar__link ul li a {
+        color: #cac9cc;
+        text-decoration: none;
+        transition: color 0.5s;
+        font-size: 1.3em; 
+    }
+    
+    .navbar__link:hover {
+        border-bottom: 1x solid rgb(50, 20, 185);
+    }
+    
+    .navbar__link a:hover {
+        color: rgb(80, 3, 204);
+    }
+    
+    .navbar__link ul li::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: rgb(76, 58, 126);
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    
+    .navbar__link ul li:hover::after {
+        width: 100%;
+    }
+    
+    .navbar__link .fa {
+        display: none;
+    
+    }
+    .navbar__link {
+        position: absolute;
+        background: #8fc3ca;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .navbar__link .fa{
+        display: block;
+        color: rgb(49, 29, 102);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+    
+    @keyframes drop {
+        0% {
+            opacity: 0;
+            transform: translateY(-80px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+/*Email*/
+.email {
+    color: #0d0024;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
-.nav-links {
-    padding: 38px;
-    height: 22px;
-    margin-right: 48px;
-    flex: 1;
-    text-align: right;
-    text-transform: uppercase;
-}
-
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-    transition: border-bottom 0.5s;
-}
-
-.nav-links ul li a {
-    color: #8ea3a0;
-    text-decoration: none;
-    transition: color 0.5s;
-    font-size: 1.3em; 
-}
-
-.nav-links:hover {
-    border-bottom: 1x solid white;
-}
-
-.nav-links a:hover {
-    color: white;
-}
-
-.nav-links ul li::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: white;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-
-.nav-links ul li:hover::after {
-    width: 100%;
+.email h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    color: #0d0024;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Text box */
@@ -375,20 +453,21 @@ button:hover span:after {
 }
 
 .hero:hover {
-    border: 1px solid #0d0024;
-    background: linear-gradient(to right, #9f1ee9, #3936f4);
+    border: 1px solid #769ff7;
+    background: linear-gradient(to right, #8a49d4, #769ff7);
     transition: 0.8s;
 }
 nav .fa {
     display: none;
 }
 
-@media(max-width: 700px){
+@media screen and (max-width: 700px){
     .text-box h1{
         font-size: 20px;
     }
     .navbar__link {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .navbar__link {
         position: absolute;
@@ -412,6 +491,7 @@ nav .fa {
 
     }
 }
+
 /* Content */
 .content {
     width: 80%;
@@ -419,6 +499,7 @@ nav .fa {
     text-align: center;
     padding: 100px;
 }
+
 
 .content h1 {
     font-size: 40px;
@@ -624,11 +705,11 @@ nav .fa {
 }
 
 .nav-aboutme-links:hover {
-    border-bottom: 1x solid rgb(50, 20, 185);
+    border-bottom: 1x solid rgb(102, 122, 231);
 }
 
 .nav-aboutme-links a:hover {
-    color: rgb(80, 3, 204);
+    color: rgb(76, 58, 126);
 }
 
 .nav-aboutme-links ul li::after {
@@ -649,7 +730,7 @@ nav-aboutme .fa {
     display: none;
 }
 
-/*@media(max-width: 700px){
+@media screen and (max-width: 700px){
     .text-box h1{
         font-size: 20px;
     }
@@ -673,7 +754,7 @@ nav-aboutme .fa {
         font-size: 22px;
         cursor: pointer;
     }
-} */
+} 
 
 @keyframes drop {
 	0% {
@@ -686,7 +767,7 @@ nav-aboutme .fa {
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	.section {
 		flex-direction: column;
 	}
@@ -792,7 +873,7 @@ nav .fa {
     display: none;
 }
 
-@media(max-width: 700px){
+@media screen and (max-width: 700px){
     .text-box h1{
         font-size: 20px;
     }
