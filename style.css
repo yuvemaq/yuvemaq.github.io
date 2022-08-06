@@ -634,3 +634,13 @@ button:hover span:after {
 nav .fa {
     display: none;
 }
+
+/*Media styles*/
+
+.mediabody {
+    background-image: url('imag/blue.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
