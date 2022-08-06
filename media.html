@@ -10,18 +10,38 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-media-links active-nav-link" id="navLinks">
-            <i class="fa fa-window-close" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="aboutme.html">ABOUT</a></li>
-                <li><a href="media.html">MEDIA</a></li>
-                <li><a href="https://github.com/yuvemaq?tab=repositories">MY GITHUB</a></li>
-            </ul>
+ <nav class="primarynav">
+    <a href="media.html"></a>
+    <div class="primarynav__container">
+        <a href="#home" id="primarynav__logo">YQK</a>
+        <div class="primarynav__toggle" id="mobile-menu">
+            <span class="bar"></span><span class="bar"></span>
+            <span class="bar"></span>
         </div>
-        <i class="fa fa-search-minus" onclick="showMenu()"></i>
-    </nav>
+        <ul class="primarynav__menu">
+            <li class="primarynav__item">
+                <a href ="index.html" class="primarynav__links" id="navbarLinks">HOME
+                </a>
+            </li>
+            <li class="primarynav__item">
+                <a href ="aboutme.html" class="primarynav__links" id="navbarLinks">ABOUT
+                </a>
+            </li>
+            <li class="primarynav__item">
+                <a href ="media.html" class="primarynav__links" id="navbarLinks">MEDIA
+                </a>
+            </li>
+            <li class="primarynav__item">
+                <a href ="blog.html" class="primarynav__links" id="navbarLinks">BLOG
+                </a>
+            </li>
+            <li class="primarynav__item">
+                <a href ="https://github.com/yuvemaq" class="primarynav__links" id="navbarLinks">GITHUB
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
     <section class="showcase">
         <header>
             <h2 class=""logo>Media Page</h2>
