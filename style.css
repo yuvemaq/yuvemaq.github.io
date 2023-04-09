@@ -471,7 +471,7 @@ button:hover span:after {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
-    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Helvetica, sans-serif;
 }
 
 .jumbotron {
@@ -501,6 +501,10 @@ button:hover span:after {
     margin-bottom: 20px;
 }
 
+.mapsection {
+    background-color: transparent;
+
+}
 #map {
     width: 95%;
     margin: 8px auto;
