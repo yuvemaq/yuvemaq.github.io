@@ -455,69 +455,6 @@ button:hover span:after {
     z-index: 999;
 }
 
-/* Nav styles for timeseries.html */
-.nav-blog {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-blog-links {
-    padding: 38px;
-    height: 22px;
-    margin-right: 48px;
-    flex: 1;
-    text-align: right;
-    text-transform: uppercase;
-}
-
-.nav-blog-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-    transition: border-bottom 0.5s;
-}
-
-.nav-blog-links ul li a {
-    color: #ffaa32;
-    text-decoration: none;
-    transition: color 0.5s;
-    font-size: 1.3em; 
-}
-
-.nav-blog-links:hover {
-    border-bottom: 1x solid rgb(27, 29, 29);
- 
-}
-
-.nav-blog-links a:hover {
-    color: rgb(31, 32, 32);
-}
-
-.nav-blog-links ul li::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: rgb(39, 41, 40);
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-
-.nav-blog-links ul li:hover::after {
-    width: 100%;
-}
-
-.nav-blog .fa {
-    display: none;
-}
-
-nav .fa {
-    display: none;
-}
-
 /*Media styles*/
 
 .mediabody {
@@ -525,4 +462,81 @@ nav .fa {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+/*Blog styles*/
+.blogbody {
+    background-image: url('imag/blue.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: "ITC Benguiat";
+    ;
+    color: #fff;
+}
+
+.jumbotron {
+    background-color: transparent;
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+}
+
+    .jumbotron h1 {
+        letter-spacing: 2.5px;
+        font-size: 30px;
+        text-align: center;
+        text-shadow: -1px 1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    .jumbotron p {
+        font-size: 15px;
+        text-align: center;
+        text-shadow: -1px -1px 0 #fff, 1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+
+    .jumbotron h1,
+    p {
+        text-align: center;
+    }
+
+.btn {
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+#map {
+    width: 100%;
+    margin: 10px auto;
+    height: 300px;
+}
+
+.info {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+.alert {
+    border-radius: 25px;
+    margin-bottom: 0;
+}
+
+@media(min-width: 768px) {
+    .jumbotron h1 {
+        font-size: 63px;
+    }
+
+    .jumbotron p {
+        font-size: 21px;
+    }
+
+    .info {
+        font-size: 2em;
+    }
+
+    .btn {
+        margin-left: 16%;
+    }
 }
