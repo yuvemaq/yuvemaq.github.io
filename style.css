@@ -472,8 +472,6 @@ button:hover span:after {
     background-attachment: fixed;
     height: 100vh;
     font-family: "ITC Benguiat";
-    ;
-    color: #fff;
 }
 
 .jumbotron {
@@ -493,7 +491,7 @@ button:hover span:after {
     .jumbotron p {
         font-size: 15px;
         text-align: center;
-        text-shadow: -1px -1px 0 #050505, 1px 0 #050505, -1px 1px 0 #050505, 1px 1px 0 #050505;
+        text-shadow: -1px -1px 0 #024d2e, 1px 0 #024d2e, -1px 1px 0 #024d2e, 1px 1px 0 #024d2e;
     }
 
     .jumbotron h1,
