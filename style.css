@@ -471,26 +471,23 @@ button:hover span:after {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
-    font-family: "ITC Benguiat";
+    font-family: "Helvetica Neue",Arial,sans-serif;
 }
 
 .jumbotron {
     background-color: transparent;
     margin: 0;
     padding: 10px;
-    color: #fff;
 }
 
     .jumbotron h1 {
         letter-spacing: 2.5px;
         font-size: 30px;
-        text-align: center;
         text-shadow: -1px 1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
     .jumbotron p {
         font-size: 15px;
-        text-align: center;
         text-shadow: -1px -1px 0 #024d2e, 1px 0 #024d2e, -1px 1px 0 #024d2e, 1px 1px 0 #024d2e;
     }
 
@@ -505,9 +502,9 @@ button:hover span:after {
 }
 
 #map {
-    width: 100%;
+    width: 80%;
     margin: 10px auto;
-    height: 300px;
+    height: 400px;
 }
 
 .info {
