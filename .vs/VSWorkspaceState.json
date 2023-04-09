@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Web",
+    "\\Web\\css"
   ],
-  "SelectedNode": "\\app.js",
+  "SelectedNode": "\\blog.html",
   "PreviewInSolutionExplorer": false
 }

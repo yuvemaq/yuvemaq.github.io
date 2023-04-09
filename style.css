@@ -493,7 +493,7 @@ button:hover span:after {
     .jumbotron p {
         font-size: 15px;
         text-align: center;
-        text-shadow: -1px -1px 0 #fff, 1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        text-shadow: -1px -1px 0 #050505, 1px 0 #050505, -1px 1px 0 #050505, 1px 1px 0 #050505;
     }
 
     .jumbotron h1,
