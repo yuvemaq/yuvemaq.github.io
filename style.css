@@ -502,15 +502,15 @@ button:hover span:after {
 }
 
 #map {
-    width: 90%;
-    margin: 10px auto;
+    width: 95%;
+    margin: 8px auto;
     height: 400px;
 }
 
 .info {
     text-align: center;
     font-size: 1em;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .alert {
